@@ -1,0 +1,36 @@
+:root{
+    --color-primario: #1d906b;
+}
+.titulo-productos{
+    margin: 20px 0;
+    text-align: center;
+    color: var(--color-primario);
+}
+.contenedor-icon-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--color-primario);
+    margin: 0 20px 20px 20px;
+}
+.contenedor-icon{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.icon-producto{
+    font-size: 50px;
+    flex: 1 1;
+}
+.icon-texto{
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1000px){
+    .icon-producto{
+        font-size: 70px;
+    }
+}

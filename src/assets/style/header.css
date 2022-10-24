@@ -1,0 +1,98 @@
+.header{
+  position: fixed;
+  background-color: #000;
+  height: 70px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  top: 0;
+}
+
+/*Header Nav Responsive*/
+:root{
+  --color-primario: #1d906b;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+input{
+  border: none;
+  outline: none;
+}
+.nav{
+  display: none;
+}
+.nav-ul-responsive{
+  position: absolute;
+  background-color: var(--color-primario);
+  top: 70px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  padding: 20px;
+  text-align: center;
+  left: -100%;
+  transition: left .5s;
+}
+.nav-ul-responsive.activo{
+  left: 0 !important;
+}
+.nav-ul-input{
+  height: 30px;
+  width: 100%;
+  padding: 0 15px;
+}
+.nav-li-responsive{
+  margin-top: 20px;
+}
+.li-a-responsive{
+  font-size: 30px;
+}
+.icon-menu,
+.icon-usuario,
+.icon-cart{
+  color: #fff;
+  font-size: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.nav-a-icon{
+  position: relative;
+}
+.header-cantidad-cart{
+  color: var(--color-primario);
+  position: absolute;
+  width: 20px;
+  text-align: center;
+  left: 17px;
+  top: 0;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-ul-responsive,
+  .nav-responsive,
+  .nav-ul-responsive.activo,
+  .nav-ul-input,
+  .icon-menu{
+    display: none;
+  }
+  .nav{
+    display: block;
+  }
+  li{
+    float: left;
+  }
+  .nav-ul{
+    display: inline-block;
+  }
+  .nav-li{
+    margin-left: 15px;
+  }
+}
