@@ -17,7 +17,7 @@ function footerInferior() {
             <img src={tarjeta5} alt="" />
         </div>
         <div className="contenedor-creador">
-            <span className='creador-pagina'>Copyright ©2022 todos los derechos reservados | Desarrollado por <a href="https://soy-erwin.com" className="creador-a" target={"_blank"}>España</a></span>
+            <span className='creador-pagina'>Copyright ©2022 todos los derechos reservados | Desarrollado por <a href="https://soy-erwin.com" className="creador-a" target={"_blank"}>SrSpes</a></span>
         </div>
         <div className="contenedor-creador">
             <span>Imagenes de: <a href="https://unsplash.com/" className="creador-a" target={"_blank"}>unsplash</a></span>
